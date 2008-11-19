@@ -78,9 +78,16 @@ $(function() {
         return html;
     }
     
+    function indexOf(arr, needle) {
+        for (var i = 0; i < arr.length; i++)
+            if (arr[i] === needle)
+                return i;
+        return -1;
+    }
+    
     function getCardIndex() {
-        var index;
-        while (typeof index == 'undefined' || pickedCardIndexes.indexOf(index) != -1)
+        var index = -1;
+        while (index == -1 || indexOf(pickedCardIndexes, index) != -1)
             index = Math.floor(Math.random() * deck.length);
         pickedCardIndexes.push(index);
         return index;
