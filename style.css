@@ -13,7 +13,7 @@ h2 {
     font-size: 1em;
 }
 #strategy-shell {
-    margin-left: 32em;
+    margin: 0 0 10em 32em;
 }
 #playing-area {
     float: left;
