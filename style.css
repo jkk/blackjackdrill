@@ -1,0 +1,132 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    background: #aaa;
+    margin: 0px;
+}
+h1 {
+    font-size: 1em;
+    background: #ccc;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+h2 {
+    font-size: 1em;
+}
+#strategy-shell {
+    margin-left: 32em;
+}
+#playing-area {
+    float: left;
+    width: 30em;
+    margin-left: 30px;
+}
+#dealer-cards, #my-cards, #action {
+    margin: 0 0 20px 20px;
+}
+#dealer-cards img, #my-cards img {
+    margin: 0 10px 0 0;
+}
+#action ul {
+    height: 3em;
+}
+#action ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#action li {
+    float: left;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 5em;
+    padding: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+#action li span {
+    display: block;
+    font-size: 0.8em;
+    color: #888;    
+}
+#action li#hit {
+    background: #bfb;
+    color: #080;
+}
+#action li#stand {
+    background: #fbb;
+    color: #800;
+}
+#action li#double {
+    background: #bbf;
+    color: #008;
+}
+#action li#split {
+    background: #fbf;
+    color: #808;
+}
+#response div {
+    cursor: pointer;
+    width: 80%;
+    margin: 0 0 0 20px;
+    clear: both;
+    text-align: center;
+    font-size: 2em;
+    background: #ccc;
+}
+#response div.correct {
+    color: #080;
+    background: #8f8;
+}
+#response div.wrong {
+    color: #800;
+    background: #f88;
+}
+table#strategy {
+    font-size: 0.65em;
+    background: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table#strategy td {
+    width: 1.5em;
+    height: 1em;
+    text-align: center;
+    border-bottom: 1px solid #888;
+}
+table#strategy tr.upcards-label td {
+    border-bottom: none;
+}
+table#strategy tr.upcards-label th {
+    font-weight: normal;
+    font-size: 0.7em;
+    background: #ffa;
+}
+table#strategy tr.upcards-row th {
+    background: #ffa;
+    border-bottom: 1px solid #888;
+}
+table#strategy tr.upcards-row td {
+    font-size: 0.7em;
+}
+table#strategy tr.myhand-row th {
+    width: 2.5em;
+    border-bottom: 1px solid #888;
+}
+table#strategy td.H {
+    color: #080;
+    background: #bfb;
+}
+table#strategy td.S {
+    color: #800;
+    background: #fbb;
+}
+table#strategy td.D {
+    color: #008;
+    background: #bbf;
+}
+table#strategy td.P {
+    color: #808;
+    background: #fbf;
+}
