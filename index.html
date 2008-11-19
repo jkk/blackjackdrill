@@ -78,19 +78,6 @@ $(function() {
         return html;
     }
     
-    function highlightCell(cellId) {
-        var cell = $('#cell-' + cellId),
-            fromFg = cell.css('color'),
-            fromBg = cell.css('backgroundColor'),
-            toFg = '#fff',
-            toBg = '#f80',
-            delay = 150;
-        cell.animate({color: toFg, backgroundColor: toBg}, delay)
-            .animate({color: fromFg, backgroundColor: fromBg}, delay)
-            .animate({color: toFg, backgroundColor: toBg}, delay)
-            .addClass('highlighted');
-    }
-    
     function getCardIndex() {
         var index;
         while (typeof index == 'undefined' || pickedCardIndexes.indexOf(index) != -1)
@@ -103,7 +90,7 @@ $(function() {
         pickedCardIndexes = [];
         answered = false;
         $('#response').html('');
-        $('#strategy td.highlighted').css({color: '', backgroundColor: ''}).removeClass('highlighted');
+        $('#strategy td.highlighted').removeClass('highlighted');
         cards.dealer = deck[getCardIndex()];
         var value;
         while (typeof value == 'undefined' || value == 21) {
@@ -149,7 +136,7 @@ $(function() {
             $('#response').html("<div class='correct'>Correct</div>");
         else
             $('#response').html("<div class='wrong'>Wrong</div>");
-        highlightCell(upcard + '-' + myhand);
+        $('#cell-' + upcard + '-' + myhand).addClass('highlighted');
         answered = true;
     }
     

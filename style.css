@@ -130,3 +130,7 @@ table#strategy td.P {
     color: #808;
     background: #fbf;
 }
+table#strategy td.highlighted {
+    color: #fff;
+    background: #f80;
+}
