@@ -24,6 +24,8 @@ h2 {
     margin: 0 0 20px 20px;
 }
 #dealer-cards img, #my-cards img {
+    width: 72px;
+    height: 96px;
     margin: 0 10px 0 0;
 }
 #action ul {
