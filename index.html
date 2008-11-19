@@ -165,6 +165,10 @@ $(function() {
     $(document).keypress(function(evt) {
         if (answered) {
             deal();
+            if (evt.which == 32) {
+                evt.stopPropagation();
+                evt.preventDefault();
+            }
             return;
         }
         var action;
